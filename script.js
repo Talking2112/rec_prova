@@ -1,12 +1,11 @@
-class Guerreiro extends Pesonagem{
+class Personagem {
     constructor(vida, forca, mana){
-        super(vida, forca, mana)
-        this.atacar = atacar
-        this.defender = defender 
-        this.usarMagia = usarMagia 
+        this.vida = vida;
+        this.forca = forca;
+        this.mana = mana
     }
     atacar(){
-    
+        console.log("Atacando")
     }
     defender(){
 
@@ -16,9 +15,21 @@ class Guerreiro extends Pesonagem{
     }
 }
 
-class Mago extends Pesonagem{
+class Guerreiro extends Personagem{
     atacar(){
+        console.log("Atacando com uma espada.")
+    }
+    defender(){
 
+    }
+    usarMagia(){
+
+    }
+}
+
+class Mago extends Personagem{
+    atacar(){
+        console.log("Atacando com magia.")
     }
     defender(){
 
@@ -28,9 +39,9 @@ class Mago extends Pesonagem{
     }
 }
 
-class Arqueiro extends Pesonagem{
+class Arqueiro extends Personagem{
     atacar(){
-
+        console.log("Atacando com um arco.")
     }
     defender(){
 
